@@ -1,0 +1,23 @@
+TODO:
+
+2D Segmentation
+
+> Volume Balancing
+> 2D Cropping (Bounding box for tumor in 2D: (Hmin: 92, Hmax: 424), (Wmin: 119, Wmax: 371))
+> Alt Dataset / Contrastive learning
+
+[1, 1, 512, 512, 589] -> Toate trebuie sa aiba aceeeasi dimensiune pe depth (Luat cea mai mare tumora + 4 albe si convertit) (FACUT)
+
+Fac un nou dataset cu toate egale (stack_size = 6 cum zicea Mihai Trascau si unrolluiesc tot trainul asa -3, tumora + 3 ca sa echilibrez batchurile (FACUT)
+Si salvez asa sau vad cum eficientizez aceasta preprocesare (FACUT AM SALVAT NISTE LISTE DE INDICI)
+
+331, 332, 333, 334, 335, 336
+332, 333, 334, 335, 336, 337
+333, 334, 335, 336, 337, 338
+...
+336, 337, 338, 339, 340, 341
+401, 402, 403, 404, 405, 406
+
+Ar veni 71: (Verificat de proba) (FACUT)
+
+Duplici partea reziduala cand o aduni TODO
