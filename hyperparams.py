@@ -1,6 +1,5 @@
 ### Hyperparameters for the models ###
 
-
 BATCH_SIZE = 4
 
 IMG_HEIGHT = 128
@@ -12,7 +11,6 @@ KEYS = ["image", "label"]
 
 LEARNING_RATE = 3e-2
 decayRate = 0.96
-
 
 MAX_EPOCHS = 10
 VALIDATION_INTERVAL = 2
