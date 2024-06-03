@@ -2,4 +2,5 @@ datasets
 __pycache__/
 checkpoints/
 plots/
-*.zip
+eda1_computational_effort_training.pkl
+arhiva*.zip
