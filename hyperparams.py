@@ -1,6 +1,6 @@
 ### Hyperparameters for the models ###
 
-BATCH_SIZE = 4
+BATCH_SIZE = 40
 
 IMG_HEIGHT = 128
 IMG_WIDTH = 128
