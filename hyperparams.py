@@ -1,6 +1,6 @@
 ### Hyperparameters for the models ###
 
-BATCH_SIZE = 40
+BATCH_SIZE = 16 # 40 maxim pentru reteaua mea, o sa vad care e maximul pentru MONAI U-Net
 
 IMG_HEIGHT = 128
 IMG_WIDTH = 128
