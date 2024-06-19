@@ -18,8 +18,13 @@ I use the terms "stacks" and "slices" interchangeably.
 ENVIRONMENT SETUP:
 
 PYTHON: 3.9.13
+
 PYTORCH: 2.1.0+cu121
+
 NUMPY: 1.22.3
+
 OPENCV/CV2: 4.5.5
+
 MONAI: 1.4.dev2418
+
 ETC
