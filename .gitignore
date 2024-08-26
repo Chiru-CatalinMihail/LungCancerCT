@@ -5,3 +5,8 @@ plots/
 *_computational_*
 arhiva*.zip
 ObsoleteFiles/
+predictions/
+*nii.gz
+*.pkl
+.ipynb_checkpoints/
+OrderedIndices_Clahe/
