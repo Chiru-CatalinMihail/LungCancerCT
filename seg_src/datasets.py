@@ -27,7 +27,7 @@ class msdDatasetTrain(Dataset):
         self.batch_size = batch_size
         self.transform = transform
 
-        split_type = 'training' if 'training' in dataset_folder else 'validation'
+        split_type = dataset_folder.split('/')[-2]
 
         # Flag that indicates we are working with the training dataset, we want to apply random rotations only for this split
         self.train_flag = split_type == 'training'
@@ -146,7 +146,7 @@ class msdDatasetEvaluation(Dataset):
         self.batch_size = batch_size
         self.transform = transform
 
-        split_type = 'training' if 'training' in dataset_folder else 'validation'
+        split_type = dataset_folder.split('/')[-2]
 
         # Flag that indicates we are working with the training dataset, we want to apply random rotations only for this split
         self.train_flag = split_type == 'training'

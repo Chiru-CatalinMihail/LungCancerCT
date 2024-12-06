@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader as TorchDataLoader
 
 from monai.metrics import MeanIoU, DiceHelper
 import pickle as pkl
+import os
 
 
 __all__ = ['save_checkpoint', 'load_checkpoint', 'train']
@@ -132,6 +133,7 @@ def train(model : nn.Module, checkpoints_path : str, model_name : str,
 
     print(best_model_name)
     writer = SummaryWriter(log_dir=f"./pytorch_logging/{general_name}_epochs{MAX_EPOCHS}")
+    os.makedirs(checkpoints_path, exist_ok=True)
 
     # Performance Metrics Computers
     dice_metric = DiceHelper(include_background = False, reduction = "mean", get_not_nans=False, ignore_empty=True) # include_background = False,
