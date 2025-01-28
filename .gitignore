@@ -11,3 +11,4 @@ prediction_Task06_Lung_UNET_023/
 *.pkl
 .ipynb_checkpoints/
 OrderedIndices_Clahe/
+Convex_Hull_Method-Zheng-Nature/raw_val_MSD_patients

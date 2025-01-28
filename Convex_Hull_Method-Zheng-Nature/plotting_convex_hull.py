@@ -4,8 +4,8 @@ import matplotlib
 
 import matplotlib.pyplot as plt
 import torch
-# plt.style.use('ggplot')
-# matplotlib.use( 'tkagg' )
+plt.style.use('ggplot')
+matplotlib.use( 'tkagg' )
 
 a = torch.load('pacienti_samples_squeezed/initial_image/patient_0.pt')
 b = torch.load('pacienti_samples_squeezed/prediction_compact/patient_0.pt')
