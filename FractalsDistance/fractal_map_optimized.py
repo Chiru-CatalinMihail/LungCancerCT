@@ -39,6 +39,7 @@ def calculate_local_fractal_dimensions(matrix, box_size=5, step=2):
             start_col = max(col - box_size // 2, 0)
             end_col = min(col + box_size // 2 + 1, width)
 
+            #TODO: Asta merge scoasa in afara si calculata o singura data pentru toata iimaginea pentru a  optimiza si mai mult.
             region = matrix[start_row:end_row, start_col:end_col]
 
             # Normalizează valorile la 0 și 1
@@ -189,6 +190,7 @@ if __name__ == '__main__':
                 
 
         torch.save(fractal_maps, f"{file_path[:-3]}_fractal_maps.pt")
+
 
 
 
